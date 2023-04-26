@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!-- daylight filter  -->
+    <span class="mode"><img class="dark" src="./icons/moon-line.svg" alt="" /></span>
+
+    <div class="profile_container">
+
+      <!-- profile data  -->
+      <div class="profile_data">
+        <div class="profile_border">
+          <div class="profile_img">
+            <img src="img/perfil.png" alt="profile" />
+          </div>
+        </div>
+      </div>
+      <h2 class="profile_name">Pankaj Kumar</h2>
+      <h3 class="profile_profession">Web Developer</h3>
+
+      <!-- profile links  -->
+      <ul class="profile_social">
+        <a href="https://www.linkedin.com/in/pankaj-kumar-62b859231" class="link">
+          <img src="./icons/linkedin-box-line.svg" alt="" />
+        </a>
+        <a href="https://github.com/Pankaj10101/" class="link">
+          <img src="./icons/github-line.svg" alt="" />
+        </a>
+      </ul>
+    </div>
+
+    <div class="profile__buttons">
+      <a download="my-resume.pdf" href="./my-resume.pdf" class="button">
+        Download CV
+        <img class="download" src="./icons/download-2-line.svg" alt="download" />
+      </a>
+
+      <div class="profile__buttons-small">
+        <a href="mailto:rkay1048@gmail.com" target="_blank" class="button button__small button__gray">
+          <img src="./icons/envelope-regular.svg" alt="email" />
+        </a>
+        <a href="https://wa.me/7508543249" target="_blank" class="button button__small button__gray">
+          <img src="./icons/whatsapp-line.svg" alt="whatsapp" />
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- complete section  -->
+    <section class="filter">
+
+      <!-- category tab  -->
+      <div class="category">
+        <ul class="filters_content">
+          <button class="filters_button filter_tab-active" id="projectsbtn">
+            Projects
+          </button>
+          <button class="filters_button" id="skillsbtn">Skills</button>
+        </ul>
+      </div>
+
+      <div class="filters__section">
+
+        <!-- project container  -->
+        <div class="projects__content" data-content id="projects">
+          <article class="projects__card">
+            <img src="img/Screenshot (54).png" alt="img" class="projects__img" />
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">React App</span>
+                <h3 class="projects__title">Shopping Cart</h3>
+                <a href="https://shopping-carthub.netlify.app/" target="_blank" class="projects__button button button__small"><i class="ri-links-line"></i></a>
+              </div>
+            </div>
+          </article>
+          <article class="projects__card">
+            <img src="img/text-to-speech.jpg" alt="img" class="projects__img" />
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Web App</span>
+                <h3 class="projects__title">Speech to Text Converter</h3>
+                <a href="https://pankaj10101.github.io/speech-recognition/" target="_blank" class="projects__button button button__small"><i class="ri-links-line"></i></a>
+              </div>
+            </div>
+          </article>
+          <article class="projects__card">
+            <img src="img/netflix-clone.jpg" alt="img" class="projects__img" />
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Web App</span>
+                <h3 class="projects__title">Movie Streaming Site</h3>
+                <a href="" target="_blank" class="projects__button button button__small"><i class="ri-links-line"></i></a>
+              </div>
+            </div>
+          </article>
+          <article class="projects__card">
+            <img src="img/tic tac toe.jpg" alt="img" class="projects__img" />
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Game App</span>
+                <h3 class="projects__title">Tic Tac Toe</h3>
+                <a href="https://pankaj10101.github.io/tik-tak-toe/" target="_blank" class="projects__button button button__small"><i class="ri-links-line"></i></a>
+              </div>
+            </div>
+          </article>
+          <article class="projects__card">
+            <img src="img/piano.jpg" alt="img" class="projects__img" />
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Music App</span>
+                <h3 class="projects__title">Playable Piano Keyboard</h3>
+                <a href="https://pankaj10101.github.io/piano/" target="_blank" class="projects__button button button__small"><i class="ri-links-line"></i></a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- skills container  -->
+        <div class="skills__content non_active" data-content id="skills">
+          <div class="skills__area">
+            <h3 class="skills__title">
+              Frontend developer
+            </h3>
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">HTML</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">CSS</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">Javascript</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">React</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">Bootstrap</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">Material UI</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">C++</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">Git</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <span class="footer__copy">
+      &#169; All rights reserved
+    </span>
+  </footer>
+</body>
+
+</html>
